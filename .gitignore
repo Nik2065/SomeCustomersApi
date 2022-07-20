@@ -2,3 +2,5 @@ BusinessLogic/obj/
 Common/obj/
 DataAccessLayer/obj/
 SomeCustomersApi/obj/
+SomeCustomersApi/bin/
+DataAccessLayer/bin/
