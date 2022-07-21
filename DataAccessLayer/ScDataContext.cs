@@ -12,6 +12,13 @@ namespace DataAccessLayer
             Database.EnsureCreated();
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<CustomerDb>()
+                       .HasMany(b => b.Clients)
+                       .WithOne();
+        }
+
 
         DbSet<CustomerDb> Customers { get; set; }
 

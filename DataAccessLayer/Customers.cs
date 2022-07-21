@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -27,6 +28,8 @@ namespace DataAccessLayer
 
         [Required]
         public string FactAddress { get; set; }
+
+        public List<ClientsDb> Clients { get; set; }
 
     }
 }
