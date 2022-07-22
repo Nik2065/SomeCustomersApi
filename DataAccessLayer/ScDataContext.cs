@@ -14,14 +14,20 @@ namespace DataAccessLayer
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<CustomerDb>()
-                       .HasMany(b => b.Clients)
-                       .WithOne();
+            //modelBuilder.Entity<CustomerDb>()
+            //   .HasMany(b => b.Clients)
+            //   .WithMany(c => c.CustomerDb)
+            //   .Map(cs =>
+            //   {
+            //       cs.MapLeftKey("CustomerId");
+            //       cs.MapRightKey("ClientId");
+            //       cs.ToTable("ClientsToCustomers", "dbo");
+            //   });
         }
 
 
-        DbSet<CustomerDb> Customers { get; set; }
+        public DbSet<CustomerDb> Customers { get; set; }
 
-        DbSet<ClientsDb> Clients { get; set; }
+        public DbSet<ClientsDb> Clients { get; set; }
     }
 }

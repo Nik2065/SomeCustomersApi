@@ -9,10 +9,10 @@ namespace Common
     {
         public CustomerDto()
         {
-            Clients = new List<ClientDto>();
+            ClientsViews = new List<ClientViewDto>();
         }
         
-        //Связанные клиенты заказчика
-        public List<ClientDto> Clients { get; set; }
+        //Связанные клиенты заказчика в упрощенном виде
+        public List<ClientViewDto> ClientsViews { get; set; }
     }
 }

@@ -5,3 +5,4 @@ SomeCustomersApi/obj/
 SomeCustomersApi/bin/
 DataAccessLayer/bin/
 Common/bin/
+ExternalApiClient/obj/

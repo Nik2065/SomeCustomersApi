@@ -28,6 +28,8 @@ namespace DataAccessLayer
 
         [Required]
         public string FactAddress { get; set; }
+        
+        public DateTime Created { get; set; }
 
         public List<ClientsDb> Clients { get; set; }
 
