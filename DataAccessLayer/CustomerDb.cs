@@ -31,7 +31,7 @@ namespace DataAccessLayer
         
         public DateTime Created { get; set; }
 
-        public List<ClientsDb> Clients { get; set; }
+        public List<ClientDb> Clients { get; set; }
 
     }
 }

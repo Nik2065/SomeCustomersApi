@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace DataAccessLayer
 {
     [Table("Clients")]
-    public class ClientsDb
+    public class ClientDb
     {
         [Key]
         public Guid Id { get; set; }
@@ -27,6 +27,9 @@ namespace DataAccessLayer
 
         [Required]
         public string FactAddress { get; set; }
+
+        [Required]
+        public DateTime Created { get; set; }
 
     }
 }

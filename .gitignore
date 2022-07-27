@@ -6,3 +6,4 @@ SomeCustomersApi/bin/
 DataAccessLayer/bin/
 Common/bin/
 ExternalApiClient/obj/
+.vs/

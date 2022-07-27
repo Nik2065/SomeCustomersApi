@@ -28,6 +28,6 @@ namespace DataAccessLayer
 
         public DbSet<CustomerDb> Customers { get; set; }
 
-        public DbSet<ClientsDb> Clients { get; set; }
+        public DbSet<ClientDb> Clients { get; set; }
     }
 }
